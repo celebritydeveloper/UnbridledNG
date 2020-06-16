@@ -37,4 +37,17 @@ html {
   border: none;
   color: #fff;
 }
+
+.feature--title {
+  color: #ff6600;
+}
+
+.feature .card-footer {
+  background: none;
+  border: none;
+  border-radius: none;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
