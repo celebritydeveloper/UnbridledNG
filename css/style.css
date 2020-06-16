@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+.text-orange {
+  color: #ff6600;
+}
+
 .button {
   border-radius: 4px;
   padding: 12px 24px;
@@ -42,15 +46,51 @@ a {
   background: linear-gradient(to bottom, rgba(36, 36, 36, 0.9), rgba(36, 36, 36, 0.6)), url("../img/bg.jpg") no-repeat;
   background-position: center;
   background-size: auto;
-  height: 650px;
+  height: 630px;
   width: 100%;
 }
 
 .header .navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header .navigation {
+  background: white;
+  color: white;
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.header .navigation .nav-link {
+  color: white;
+}
+
+.header .navbar .navbar-toggler {
+  border: none;
+  outline: 1px solid #ff6600;
+}
+
+.header .navbar .navbar-toggler:hover {
+  border: 1px solid white;
+  border-radius: 0;
+  outline: none;
+}
+
+.header .navbar .navbar-toggler:active {
+  border: 1px solid #ff6600;
+  outline: none;
+}
+
+.navbar-nav {
   color: #fff;
 }
 
-.navbar .navbar-toggler {
+.navbar .navbar-toggler:active {
   border: none;
   color: #fff;
 }
