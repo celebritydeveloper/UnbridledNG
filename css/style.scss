@@ -26,6 +26,11 @@ html {
     color: $white;
 }
 
+.button-green {
+    background: $green;
+    border: 1px solid $green;
+    color: $white;
+}
 
 .header {
     background: linear-gradient(to bottom, rgba(36, 36, 36, 0.9), rgba(36, 36, 36, 0.6)), url("../img/bg.jpg") no-repeat;
@@ -51,6 +56,10 @@ html {
         color: $orange;
     }
 
+    .card {
+        background: none;
+    }
+
     .card-footer{
         background: none;
         border: none;
@@ -58,5 +67,31 @@ html {
         font-weight: 500;
         text-align: center;
         text-transform: uppercase;
+    }
+}
+
+
+.story {
+
+    &-feature {
+        background: rgb(17, 31, 42);
+    }
+
+    .card-img-overlay {
+        background: rgba(255, 102, 0, 0.4);
+    }
+
+    .card-img-overlay-text {
+        bottom: 25px;
+        color: $white;
+        position: absolute;
+        
+    }
+
+
+    .list-group-item {
+        background: none;
+        border-bottom-color: $white;
+        color: $white;
     }
 }
