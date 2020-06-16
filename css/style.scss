@@ -15,15 +15,27 @@ html {
     color: rgb(227, 227, 227);
 }
 
+a {
+    text-decoration: none;
+}
+
 .button {
     border-radius: 4px;
-    padding: 12px;
+    padding: 12px 24px;
 }
 
 .button-orange {
     background: $orange;
     border: 1px solid $orange;
     color: $white;
+    
+}
+
+.button-orange:hover {
+    background: $white;
+    border: 1px solid $orange;
+    color: $orange;
+    text-decoration: none;
 }
 
 .button-green {
@@ -94,4 +106,63 @@ html {
         border-bottom-color: $white;
         color: $white;
     }
+}
+
+.explore {
+
+    .explore--title {
+        color: #fff;
+        font-weight: 550;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .card .card-img-overlay {
+        background: linear-gradient(to right, rgba(110, 109, 109, 0.6), rgba(110, 109, 109, 0.6));
+        border-radius: 8px;
+        color: #666;
+        align-items: start;
+    }
+
+    .card .card-img-overlay:hover {
+        color: #666;
+        align-items: start;
+    }
+
+    ul.explore--links {
+        display: none;
+    }
+    
+    .card:hover ul.explore--links {
+        background: none;
+        border: none;
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 65px;
+    }
+
+    .card .explore--overlay:hover {
+        background: #fff;
+        border: 2px solid rgb(148, 143, 140);
+        border-radius: 8px;
+        cursor: pointer;
+        align-items: start;
+    }
+
+    .list-group-item {
+        border-bottom: none;
+        color: #666;
+        padding: 6px 20px 6px 0;
+    }
+
+    .card:hover .explore--title {
+        color: rgb(255, 102, 0);
+        position: absolute;
+        left: 15px;
+        text-align: left;
+        top: 15px;
+    }
+    
+
 }

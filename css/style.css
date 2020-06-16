@@ -9,15 +9,26 @@ html {
   color: #e3e3e3;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button {
   border-radius: 4px;
-  padding: 12px;
+  padding: 12px 24px;
 }
 
 .button-orange {
   background: #ff6600;
   border: 1px solid #ff6600;
   color: white;
+}
+
+.button-orange:hover {
+  background: white;
+  border: 1px solid #ff6600;
+  color: #ff6600;
+  text-decoration: none;
 }
 
 .button-green {
@@ -79,5 +90,66 @@ html {
   background: none;
   border-bottom-color: white;
   color: white;
+}
+
+.explore .explore--title {
+  color: #fff;
+  font-weight: 550;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.explore .card .card-img-overlay {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(110, 109, 109, 0.6)), to(rgba(110, 109, 109, 0.6)));
+  background: linear-gradient(to right, rgba(110, 109, 109, 0.6), rgba(110, 109, 109, 0.6));
+  border-radius: 8px;
+  color: #666;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.explore .card .card-img-overlay:hover {
+  color: #666;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.explore ul.explore--links {
+  display: none;
+}
+
+.explore .card:hover ul.explore--links {
+  background: none;
+  border: none;
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 65px;
+}
+
+.explore .card .explore--overlay:hover {
+  background: #fff;
+  border: 2px solid #948f8c;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.explore .list-group-item {
+  border-bottom: none;
+  color: #666;
+  padding: 6px 20px 6px 0;
+}
+
+.explore .card:hover .explore--title {
+  color: #ff6600;
+  position: absolute;
+  left: 15px;
+  text-align: left;
+  top: 15px;
 }
 /*# sourceMappingURL=style.css.map */
