@@ -1,9 +1,40 @@
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  color: #e3e3e3;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.button-orange {
+  background: #ff6600;
+  border: 1px solid #ff6600;
+  color: white;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 36, 0.9)), to(rgba(36, 36, 36, 0.6))), url("../img/bg.jpg") no-repeat;
+  background: linear-gradient(to bottom, rgba(36, 36, 36, 0.9), rgba(36, 36, 36, 0.6)), url("../img/bg.jpg") no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 650px;
+  width: 100%;
+}
+
+.header .navbar {
+  color: #fff;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

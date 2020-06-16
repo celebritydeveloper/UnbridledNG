@@ -1,8 +1,45 @@
+$orange: rgb(255, 102, 0);
+$green: rgb(0, 255, 0);
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+
+
 body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
+    color: rgb(227, 227, 227);
+}
+
+.button {
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.button-orange {
+    background: $orange;
+    border: 1px solid $orange;
+    color: $white;
+}
+
+
+.header {
+    background: linear-gradient(to bottom, rgba(36, 36, 36, 0.9), rgba(36, 36, 36, 0.6)), url("../img/bg.jpg") no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 650px;
+    width: 100%;
+  }
+
+.header .navbar {
+    color: #fff;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    color: #fff;
 }
