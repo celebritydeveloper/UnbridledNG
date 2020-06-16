@@ -225,3 +225,94 @@ a {
         text-decoration: none;
     }
 }
+
+.contact-header {
+    .navbar {
+        background: rgba(0,0,0,0.5);
+        //top: 0;
+    }
+
+
+    .navigation {
+        background: $white;
+        color: $white;
+        position: fixed;
+        z-index: 10;
+        height: 100vh;
+        padding: 10px 20px;
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
+
+    .navigation .nav-link {
+        color: $black;
+    }
+
+    .navigation .nav-item .active .nav-link{
+        color: $orange;
+    }
+
+    .navbar .navbar-toggler {
+        border: none;
+        outline: 1px solid $orange;
+    }
+
+    .navbar .navbar-toggler:hover {
+        border: 1px solid $white;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .navbar .navbar-toggler:active {
+        border: 1px solid $orange;
+        outline: none;
+    }
+}
+
+.contact-body {
+    background: linear-gradient(to bottom, rgba(36, 36, 36, 0.9), rgba(36, 36, 36, 0.6)), url("../img/bg.jpg") no-repeat;
+    background-position: center;
+    background-size: auto;
+
+}
+
+
+.contact {
+    &__form {
+
+        label {
+            color: $white;
+        }
+
+        input, textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $white;
+            border-radius: 0;
+        }
+
+        input:focus, textarea:focus {
+            background: transparent;
+            border: none;
+            color: $white;
+            outline-style: none;
+        }
+
+        input:active {
+            outline-style: none;
+        }
+    }
+}
+
+.contact__footer {
+    color: $white;
+
+    .footer--social a{
+        color: $white;
+    }
+
+    .footer--social a:hover{
+        color: $orange;
+    }
+}
