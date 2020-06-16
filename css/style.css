@@ -152,4 +152,15 @@ a {
   text-align: left;
   top: 15px;
 }
+
+.footer--social a {
+  color: black;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+.footer--social a:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
